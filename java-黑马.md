@@ -1150,81 +1150,57 @@ String::compareToIgnoreCase
 
 - `public String( )`,`public String(String original)`,`public String(char[] chars)`,`public String(byte[] bytes)`,
 
+两者的区别：**第一种方法对象会存储在字符串常量池，且相同内容的字符串只存储一份**；第二种new的对象在堆内存      
+
+```java
+String s1 = "abc";
+String s2 = "abc";
+// true
+sout(s1 == s2);
+```
+
+##### 6.4.1.2 字符串提供的常用方法
+
+- ==字符串对象的内容比较，不要用 == ，== ====默认比较地址==，内容一样，地址不一定一样  ---使用equals
+
+```java
+length;
+charAt;
+toCharArray;
+equals;
+equalsIgnoreCase;
+substring;
+replace;
+contains;
+startsWith;
+split;
+```
+
 
 
 #### 6.4.2 ArrayList
 
-
-
-
-
-### 6.5 GUI编程
-
-
-
-
-
-
-
-
-
-
-
-## 7. 综合管理系统&java游戏开发
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- 集合：一种容器，装数据用的
+  - 大小可变
+- 集合有很多：ArrayList、List、LinkedList、Map、HashMap、LinkedHashMap、TreeMap、Set、HashSet、TreeSet、LinkedHashSet
+- 创建一个ArrayList对象，代表一个集合容器；调用ArrayList的方法，对容器中数据进行增删改查
+
+```java
+// 范型约束传入类型
+ArrayList<T> list = new ArrayList<>();
+```
+
+常用方法：
+
+```java
+add;
+get;
+size;
+remove;
+set;
+```
+
+------
 
 
 
@@ -1234,24 +1210,69 @@ String::compareToIgnoreCase
 
 # 基础加强
 
-## 异常、范型、集合框架
+## 1.异常、范型、集合框架
 
 
 
-## Map集合框架、Stream
+## 2.Map集合框架、Stream
 
 
 
-## 常用API-IO流框架
+## 3.常用API-IO流框架
 
 
 
-## 常用API-多线程
+## 4.常用API-多线程
 
 
 
-## 常用API-网络编程综合项目实战
+## 5.常用API-网络编程综合项目实战
 
 
 
-## 常用API-反射&注解 
+## 6.常用API-反射&注解 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
